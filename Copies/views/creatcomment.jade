@@ -1,0 +1,26 @@
+
+extends layout
+ 
+block content
+    h1= title
+    form(name="add-estimation",action="/api/comment", method="post")
+        div.input
+            span.label Comment Id for update 
+            br
+            input(type="text", name="id", placeholder="Comment Id")
+            br
+            br 
+        div.input
+            span.label User Name 
+            br
+            input(type="text", name="username", placeholder="User Name")
+            br
+            br
+        div.input
+            span.label The Comment  
+            br
+            input(type="text", name="body", placeholder="The Comment")    
+            br
+            br     
+        div.actions
+            input(type="submit", value="Create Comment")

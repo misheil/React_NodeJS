@@ -1,0 +1,149 @@
+https://www.youtube.com/watch?v=1MOJdx_yZ0w&list=PL-pY8jaGk0B-5dGuT1rmBFh0Ukt328FcY
+https://www.youtube.com/watch?v=_DSUh3WUDCU&index=2&list=PLO7dK6dlKmdtggUsLtswlQB1KKSRvzLRN
+
+
+"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
+
+express React_Nodejs
+npm install
+
+nodemon
+http://localhost:3000/
+
+npm install mongoose  --save 
+
+---------------------------------------------
+1- into routes folder create file api.js
+---------------------------------------------
+
+2- into app.js add this :
+
+   var api = require('./routes/api');
+   app.use('/api', api);
+
+---------------------------------------------
+3- create models folder and create zone.js
+    to create the schima and the collections
+
+---------------------------------------------
+4- create controllers folder and create ZoneController.js
+   into it :
+var Zone = require('../models/Zone');
+module.exports = {
+	find: function(params,callback){
+        Zone.find(params,function(err,zones){
+        	if(err){
+        		callback(err,null);
+        		return;
+        	}
+        	callback(null,zones);
+        })
+	},
+
+	findById: function(){
+
+	},
+
+	create: function(){
+
+	},
+
+	update: function(){
+
+	},
+
+	destroy: function(){
+
+	}
+}
+---------------------------------------------
+
+5- into api.js create the rout
+router.get('/:resource',function(req,res,next){
+
+router.get('/:resource/:id',function(req,res,next){
+
+---------------------------------------------
+6- to check how to insert recored into db after writing the code into zoneController
+create file into views :creatzone.jadl
+then create a route into router/index.js
+then create a rout for post request into routs/api.js
+
+---------------------------------------------
+Starting React installition at :1:45
+
+npm install react --save
+
+npm install react-dom --save
+
+npm install react-dom --save
+
+npm install webpack --save-dev
+
+npm install webpack-cli --save-dev
+
+to install it globaly in your computer
+npm i -g webpack 
+
+
+npm install babel-core  --save-dev
+
+npm install babel-loader --save-dev
+
+npm install babel-preset-react  --save-dev
+
+npm install babel-preset-es2015  --save-dev
+
+npm install webpack-dev-server --save-dev
+
+---------------------------------------------
+7- create file webpack.config.js
+to till where react code in the entery
+and in the output where it will compile
+
+---------------------------------------------
+8- create ./src folder
+
+---------------------------------------------
+at 2:27 start to use react component
+from react-playlist-lesson-3.zip take package.json and webpack.json and webpack.config.json >>> then npm install 
+and it will work
+
+---------------------------------------------
+ npm install react-hot-loader --save-dev
+
+---------------------------------------------
+ npm install superagent --save
+
+---------------------------------------------
+to do repository into github:
+create file .gitignore
+create file .env
+
+into cmd : 
+git init
+git add .      // this is to commit the changes
+git status
+git commit -m "initial commit"
+
+from http://github
+create new repository and take this line and execute into cmd
+git remote add origin https://github.com/misheil/React_NodeJS.git
+
+git push -u origin master
+
+To clone the repository into your pc: 
+git colne https://github.com/misheil/React_NodeJS.git
+
+
+
+
+
+Stop 50:00
+
+
+
+
+
+
+

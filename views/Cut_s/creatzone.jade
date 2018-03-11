@@ -1,0 +1,20 @@
+
+extends layout
+ 
+block content
+    h1= title
+    form(name="add-estimation",action="/api/zone", method="post")
+        div.input
+            span.label Name 
+            br
+            input(type="text", name="name", placeholder="Name")
+            br
+            br
+        div.input
+            span.label Zip Codes  
+            br
+            input(type="text", name="zipCodes", placeholder="Zip Codes")    
+            br
+            br     
+        div.actions
+            input(type="submit", value="Create Zone")
